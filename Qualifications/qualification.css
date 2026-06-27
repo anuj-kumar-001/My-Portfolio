@@ -1,0 +1,135 @@
+:root {
+    --viridian-green: #6b9080;
+    --summer-green: #a4c3b2;
+    --paris-white: #cce3de;
+    --aqua-haze: #eaf4f4;
+    --sugar-cane: #f6fff8;
+    --text-dark: #25332f;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--aqua-haze);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.page-header {
+    background-color: var(--viridian-green);
+    color: var(--white);
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--viridian-green);
+    background-color: var(--sugar-cane);
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    background-color: var(--paris-white);
+}
+
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.intro-section,
+.qualification-section,
+.cgpa-section {
+    background-color: var(--sugar-cane);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(37, 51, 47, 0.12);
+}
+
+section h2 {
+    color: var(--viridian-green);
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.qualification-card {
+    background-color: var(--aqua-haze);
+    border-left: 6px solid var(--viridian-green);
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+}
+
+.qualification-card h3 {
+    color: var(--viridian-green);
+    margin-bottom: 10px;
+}
+
+.cgpa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cgpa-card {
+    background-color: var(--paris-white);
+    padding: 22px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.cgpa-card:hover {
+    transform: translateY(-5px);
+    background-color: var(--summer-green);
+}
+
+.cgpa-card h3 {
+    color: var(--viridian-green);
+    margin-bottom: 10px;
+}
+
+.cgpa-card span {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-dark);
+}
+
+.footer {
+    text-align: center;
+    padding: 18px;
+    background-color: var(--viridian-green);
+    color: var(--white);
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
